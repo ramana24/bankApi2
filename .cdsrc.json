@@ -1,0 +1,33 @@
+{
+    "auth": {
+        "passport": {
+            "strategy": "mock",
+            "users": {
+                "Ranjith": {
+                    "password": "user",
+                    "ID": "200",
+                    "roles": [
+                        "authenticated-user",   
+                        "Manager"
+                    ]
+                },
+                "Vinyan": {
+                    "password": "user",
+                    "ID": "202",
+                    "roles": [
+                        "authenticated-user",
+                        "Manager"
+                    ]
+                },
+                "FioriUX": {
+                    "password": "user",
+                    "ID": "201",
+                    "roles": [
+                        "authenticated-user",   
+                        "Manager"
+                    ]
+                }
+            }
+        }
+    }
+}

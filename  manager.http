@@ -1,0 +1,194 @@
+###
+#
+# Browse Banks
+#
+GET http://localhost:4004/executiveservice/Banks?
+
+  # &$select=title,stock
+  # &$expand=currency
+  # &sap-language=de
+
+###
+#
+# Get Author wit ID 101
+#
+GET http://localhost:4004/catalog/Authors(101)
+
+###
+#
+# Update Author with ID 101
+#
+POST http://localhost:4004/executiveservice/Banks
+Content-Type: application/json
+
+{ 
+    "bankID": 117,
+    "bankname": "Mahendra Bank",
+    "state_ID" : 401,
+    "city_ID" : 502,
+    "customers" : [
+        {
+        "custID" : 230,
+        "firstname" : "Dhnees",
+        "lastname" : "naaraj",
+        "address" : "asff Street",
+        "state_ID" : 401,
+        "city_ID" : 502,
+        "accounts" : [            
+            {
+                "accountid" : 1000000000000800,
+                "Balance" : 45,
+                "account_status" : "Active",
+                "account_type" : "Savings",
+                "transections" : [
+                    {
+                        "type" : "Deposit",
+                        "description" : "Check Deposit",
+                        "amount" : 45
+                    }
+                ]
+            },
+            {
+                "accountid" : 1000000000000900,
+                "Balance" : 45,
+                "account_status" : "Active",
+                "account_type" : "Current",
+                "transections" : [
+                    {
+                        "type" : "withdraw",
+                        "description" : "Check Deposit",
+                        "amount" : 45
+                    }
+                ]
+            }
+        ]
+        },
+        {
+        "custID" : 231,
+        "firstname" : "Dhaneesha",
+        "lastname" : "narayanaraj",
+        "address" : "Kuppaiah Street",
+        "state_ID" : 401,
+        "city_ID" : 502,
+        "accounts" : [            
+            {
+                "accountid" : 1000000000001100,
+                "Balance" : 45,
+                "account_status" : "Active",
+                "account_type" : "Savings",
+                "transections" : [
+                    {
+                        "type" : "Deposit",
+                        "description" : "Check Deposit",
+                        "amount" : 45
+                    }
+                ]
+            },
+            {
+                "accountid" : 1000000000001200,
+                "Balance" : 45,
+                "account_status" : "Active",
+                "account_type" : "Current",
+                "transections" : [
+                    {
+                        "type" : "withdraw",
+                        "description" : "Check Deposit",
+                        "amount" : 45
+                    }
+                ]
+            }
+        ]
+        }
+    ] 
+}
+
+
+###
+#
+# Order a Book
+#
+POST http://localhost:4004/executiveservice/Banks
+Content-Type: application/json;IEEE754Compatible=true
+
+{ 
+    "bankID": 101,
+    "bankname": "HDFC Bank",
+    "state_ID" : 402,
+    "city_ID" : 402,
+    "customers" : [
+        {
+        "custID" : 330,
+        "firstname" : "Raju",
+        "lastname" : "Varma",
+        "address" : "Trivandrum",
+        "state_ID" : 402,
+        "city_ID" : 402,
+        "accounts" : [            
+            {
+                "accountid" : 1000000000000801,
+                "Balance" : 450,
+                "account_status" : "Active",
+                "account_type" : "Savings",
+                "transections" : [
+                    {
+                        "type" : "Deposit",
+                        "description" : "Check Deposit",
+                        "amount" : 45
+                    }
+                ]
+            },
+            {
+                "accountid" : 1000000000000901,
+                "Balance" : 45,
+                "account_status" : "Active",
+                "account_type" : "Current",
+                "transections" : [
+                    {
+                        "type" : "withdraw",
+                        "description" : "Check Deposit",
+                        "amount" : 45
+                    }
+                ]
+            }
+        ]
+        },
+        {
+        "custID" : 331,
+        "firstname" : "Dhanraj",
+        "lastname" : "narayanaraj",
+        "address" : "Kuppaiah Street",
+        "state_ID" : 402,
+        "city_ID" : 402,
+        "accounts" : [            
+            {
+                "accountid" : 1000000000001101,
+                "Balance" : 45,
+                "account_status" : "Active",
+                "account_type" : "Savings",
+                "transections" : [
+                    {
+                        "type" : "Deposit",
+                        "description" : "Check Deposit",
+                        "amount" : 45
+                    }
+                ]
+            },
+            {
+                "accountid" : 1000000000001201,
+                "Balance" : 45,
+                "account_status" : "Active",
+                "account_type" : "Current",
+                "transections" : [
+                    {
+                        "type" : "withdraw",
+                        "description" : "Check Deposit",
+                        "amount" : 45
+                    }
+                ]
+            }
+        ]
+        }
+    ] 
+}
+
+
